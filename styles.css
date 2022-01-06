@@ -1,0 +1,111 @@
+
+body {
+  margin: 0;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  height: 100vh;
+}
+
+hr {
+  border: 1px solid hsl(215, 51%, 70%);
+  border-bottom: none;
+}
+
+.card {
+  align-content: space-around;
+  align-items: space-around;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 300px;
+}
+
+/* Card Image and Hover State */
+
+.card-img{
+  border-radius: .5rem;
+  height: 260px;
+}
+
+.view-icon {
+  height: 260px;
+  width: 260px;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+}
+
+.icon {
+  visibility: hidden;
+  z-index: 20;
+}
+
+.view-icon:hover {
+  background-color: aqua;
+  opacity: 0.5;
+}
+
+.view-icon:hover .icon {
+  visibility: visible;
+  color: white;
+}
+
+/* Card Content */
+.card-title {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+}
+
+.card-title:hover, 
+.creater-name:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.card-description {
+  color: hsl(215, 51%, 70%);
+}
+
+.points {
+  margin: 0;
+  color: hsl(178, 100%, 50%);
+}
+
+.card-detail {
+  display: flex;
+}
+
+.creater {
+  display: flex;
+  margin: 20px auto;
+}
+
+.creater-img {
+  border-radius: 50%;
+  height: 30px;
+  border: 1px solid white;
+}
+
+.creater-about {
+  margin: 0;
+  color: hsl(215, 51%, 70%);
+}
+
+.creater-name {
+  margin: 0;
+  color: white;
+}
+
+.creater-about-div {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
